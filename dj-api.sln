@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dj-api", "dj-api\dj-api.csproj", "{5583D997-856B-4EA6-BFC0-B749BDF2CB95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTestsDjApi", "IntegrationTestsDjApi\IntegrationTestsDjApi.csproj", "{6D7F2281-D526-44D8-9391-A8165487F07D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5583D997-856B-4EA6-BFC0-B749BDF2CB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5583D997-856B-4EA6-BFC0-B749BDF2CB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5583D997-856B-4EA6-BFC0-B749BDF2CB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5583D997-856B-4EA6-BFC0-B749BDF2CB95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D7F2281-D526-44D8-9391-A8165487F07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D7F2281-D526-44D8-9391-A8165487F07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D7F2281-D526-44D8-9391-A8165487F07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D7F2281-D526-44D8-9391-A8165487F07D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76039F4D-74BA-4CE4-941D-A9B4858C203B}
+	EndGlobalSection
+EndGlobal

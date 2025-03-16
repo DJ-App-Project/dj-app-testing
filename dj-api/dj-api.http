@@ -1,0 +1,14 @@
+@dj_api_HostAddress = http://localhost:5152
+
+GET {{dj_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+
+###
+GET {{dj_api_HostAddress}}/api/event
+Accept: application/json
+
+
+
+
+
