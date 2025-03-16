@@ -1,2 +1,2 @@
-# dj-app-testing
-dj-app-testing
+# Testing team
+Hi team, this is a test.
