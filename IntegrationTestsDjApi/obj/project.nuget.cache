@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wnqs43zYtKE=",
+  "dgSpecHash": "fijlbK9ooJ8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
+  "projectFilePath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amar\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Amar\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",

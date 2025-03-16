@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj": {}
+    "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\dj-api.csproj": {
+    "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\dj-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\dj-api.csproj",
+        "projectUniqueName": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\dj-api.csproj",
         "projectName": "dj-api",
-        "projectPath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\dj-api.csproj",
+        "projectPath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\dj-api.csproj",
         "packagesPath": "C:\\Users\\Amar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\obj\\",
+        "outputPath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,14 +107,14 @@
         }
       }
     },
-    "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj": {
+    "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
+        "projectUniqueName": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
         "projectName": "IntegrationTestsDjApi",
-        "projectPath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
+        "projectPath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\IntegrationTestsDjApi.csproj",
         "packagesPath": "C:\\Users\\Amar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\IntegrationTestsDjApi\\obj\\",
+        "outputPath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\IntegrationTestsDjApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -136,8 +136,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\dj-api.csproj": {
-                "projectPath": "C:\\Users\\Amar\\Desktop\\update-api\\dj-app-api-main\\dj-api\\dj-api.csproj"
+              "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\dj-api.csproj": {
+                "projectPath": "C:\\Users\\Amar\\source\\repos\\dj-app-testing\\dj-api\\dj-api.csproj"
               }
             }
           }

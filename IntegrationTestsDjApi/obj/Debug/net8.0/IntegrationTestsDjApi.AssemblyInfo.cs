@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegrationTestsDjApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1982ccc8c188ba30c4cfdd6ce6ec153928b71741")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegrationTestsDjApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegrationTestsDjApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

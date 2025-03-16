@@ -12,6 +12,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
+//Testi so bili izdelani in izvajani z strani Amar Tabaković znotraj te klase
 namespace IntegrationTestsDjApi
 {
     public class GuestUserTest : IClassFixture<WebApplicationFactory<Program>>

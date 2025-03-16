@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 
-//Testi so bili izdelani in izvajani z strani Davida Ajnika
+//Testi so bili izdelani in izvajani z strani Davida Ajnika znotraj te klase
 namespace IntegrationTestsDjApi
 {
     public class songAPI_test : IClassFixture<WebApplicationFactory<Program>>

@@ -12,6 +12,7 @@ using Microsoft.Extensions.Caching.Memory;
 using dj_api.ApiModels.Event.Get;
 using dj_api.ApiModels;
 
+//Testi so bili izdelani in izvajani z strani Amar Tabaković znotraj te klase
 namespace IntegrationTestsDjApi
 {
     public class EventTest : IClassFixture<WebApplicationFactory<Program>>

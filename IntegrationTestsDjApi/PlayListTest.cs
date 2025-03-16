@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using dj_api.ApiModels;
 using System.Net.Http.Json;
 
+//Testi so bili izdelani in izvajani z strani Amar Tabaković znotraj te klase
 namespace IntegrationTestsDjApi
 {
     public class PlayListTest : IClassFixture<WebApplicationFactory<Program>>
