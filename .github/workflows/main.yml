@@ -1,0 +1,45 @@
+name: API Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore API dependencies
+        run: |
+          dotnet restore dj-api/dj-api.csproj
+          dotnet restore IntegrationTestsDjApi/IntegrationTestsDjApi.csproj
+
+      - name: Build API and Tests
+        run: |
+          dotnet build -c Release --no-restore dj-api/dj-api.csproj
+          dotnet build -c Release --no-restore IntegrationTestsDjApi/IntegrationTestsDjApi.csproj
+
+      - name: Run Tests
+        env:
+          ASPNETCORE_ENVIRONMENT: Development
+          ASPNETCORE_URLS: http://+:5152
+          ConnectionStrings__DbConnection: ${{ secrets.MONGODB_CONNECTION_STRING }}
+          JWTSecrets__issuer: ${{ secrets.JWT_ISSUER }}
+          JWTSecrets__audience: ${{ secrets.JWT_AUDIENCE }}
+          JWTSecrets__secretKey: ${{ secrets.JWT_SECRET_KEY }}
+          JWTSecrets__expires: ${{ secrets.JWT_EXPIRES }}
+        run: |
+          dotnet test IntegrationTestsDjApi/IntegrationTestsDjApi.csproj \
+            --no-restore \
+            --no-build \
+            --configuration Release
