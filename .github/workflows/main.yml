@@ -10,6 +10,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    services:
+      api:
+        image: timotejekart/dj-api:latest
+        env:
+          ASPNETCORE_ENVIRONMENT: Development
+          ASPNETCORE_URLS: http://+:5152
+          ConnectionStrings__DbConnection: ${{ secrets.MONGODB_CONNECTION_STRING }}
+          JWTSecrets__issuer: ${{ secrets.JWT_ISSUER }}
+          JWTSecrets__audience: ${{ secrets.JWT_AUDIENCE }}
+          JWTSecrets__secretKey: ${{ secrets.JWT_SECRET_KEY }}
+          JWTSecrets__expires: ${{ secrets.JWT_EXPIRES }}
+        ports:
+          - 5152:5152
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,27 +33,11 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore API dependencies
-        run: |
-          dotnet restore dj-api/dj-api.csproj
-          dotnet restore IntegrationTestsDjApi/IntegrationTestsDjApi.csproj
-
-      - name: Build API and Tests
-        run: |
-          dotnet build -c Release --no-restore dj-api/dj-api.csproj
-          dotnet build -c Release --no-restore IntegrationTestsDjApi/IntegrationTestsDjApi.csproj
+      - name: Wait for API
+        run: sleep 10
 
       - name: Run Tests
         env:
           ASPNETCORE_ENVIRONMENT: Development
-          ASPNETCORE_URLS: http://+:5152
-          ConnectionStrings__DbConnection: ${{ secrets.MONGODB_CONNECTION_STRING }}
-          JWTSecrets__issuer: ${{ secrets.JWT_ISSUER }}
-          JWTSecrets__audience: ${{ secrets.JWT_AUDIENCE }}
-          JWTSecrets__secretKey: ${{ secrets.JWT_SECRET_KEY }}
-          JWTSecrets__expires: ${{ secrets.JWT_EXPIRES }}
-        run: |
-          dotnet test IntegrationTestsDjApi/IntegrationTestsDjApi.csproj \
-            --no-restore \
-            --no-build \
-            --configuration Release
+          API_BASE_URL: http://localhost:5152
+        run: dotnet test IntegrationTestsDjApi/IntegrationTestsDjApi.csproj -c Release
